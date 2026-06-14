@@ -14,7 +14,7 @@ def get_tache():
 def post_taches():
     data = request.get_json()
     taches.append(data["titre"])
-    return jsonify({"message":"Tâche ajoutée !"})
+    return jsonify({"message":"Tâche ajoutée !"}), 201
 
 
 
